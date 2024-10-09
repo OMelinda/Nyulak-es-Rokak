@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "RetLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/RetLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RetLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RetLib/1.0.0": {
+      "type": "project",
+      "path": "../RetLib/RetLib.csproj",
+      "msbuildProject": "../RetLib/RetLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "RetLib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/user/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/Ret/Ret.csproj",
+      "projectName": "Ret",
+      "projectPath": "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/Ret/Ret.csproj",
+      "packagesPath": "/home/user/.nuget/packages/",
+      "outputPath": "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/Ret/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/user/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/RetLib/RetLib.csproj": {
+              "projectPath": "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/RetLib/RetLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/home/user/dotnet-sdk-8.0.204/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
