@@ -1,17 +1,20 @@
-namespace RetLib;
-
 public class Cell
 {
+    public int X { get; private set; }
+    public int Y { get; private set; }
     public Grass Grass { get; set; }
     public Rabbit Rabbit { get; set; }
     public Fox Fox { get; set; }
 
-    public Cell(Grass grass)
+    public Cell(int x, int y)
     {
-        Grass = grass;
-        Rabbit = null!;
-        Fox = null!;
+        X = x;
+        Y = y;
+        Grass = new Grass();
     }
 
-    public bool IsEmpty() => Rabbit == null && Fox == null;
+    public bool IsEmpty()
+    {
+        return Rabbit == null && Fox == null;
+    }
 }

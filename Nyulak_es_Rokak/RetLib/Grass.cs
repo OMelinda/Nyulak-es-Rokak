@@ -1,10 +1,13 @@
-namespace RetLib;
+public enum GrassState
+{
+    Seedling,    // Fûkezdemény
+    Tender,      // Zsenge fû
+    FullGrown    // Kifejlett fûcsomó
+}
 
 public class Grass
 {
-    public enum GrassState { Seedling, YoungGrass, FullGrass }
     public GrassState State { get; private set; }
-    public int NutritionalValue => State == GrassState.FullGrass ? 2 : State == GrassState.YoungGrass ? 1 : 0;
 
     public Grass()
     {
@@ -14,16 +17,22 @@ public class Grass
     public void Grow()
     {
         if (State == GrassState.Seedling)
-            State = GrassState.YoungGrass;
-        else if (State == GrassState.YoungGrass)
-            State = GrassState.FullGrass;
+            State = GrassState.Tender;
+        else if (State == GrassState.Tender)
+            State = GrassState.FullGrown;
     }
 
-    public void Eat()
+    public int GetNutritionValue()
     {
-        if (State == GrassState.FullGrass)
-            State = GrassState.YoungGrass;
-        else if (State == GrassState.YoungGrass)
-            State = GrassState.Seedling;
+        if (State == GrassState.Tender)
+            return 1;
+        else if (State == GrassState.FullGrown)
+            return 2;
+        return 0;
+    }
+
+    public void ResetToSeedling()
+    {
+        State = GrassState.Seedling;
     }
 }

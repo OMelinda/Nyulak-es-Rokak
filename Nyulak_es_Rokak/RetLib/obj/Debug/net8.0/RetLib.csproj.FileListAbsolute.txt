@@ -1,0 +1,11 @@
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\bin\Debug\net8.0\RetLib.deps.json
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\bin\Debug\net8.0\RetLib.dll
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\bin\Debug\net8.0\RetLib.pdb
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\obj\Debug\net8.0\RetLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\obj\Debug\net8.0\RetLib.AssemblyInfoInputs.cache
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\obj\Debug\net8.0\RetLib.AssemblyInfo.cs
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\obj\Debug\net8.0\RetLib.csproj.CoreCompileInputs.cache
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\obj\Debug\net8.0\RetLib.dll
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\obj\Debug\net8.0\refint\RetLib.dll
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\obj\Debug\net8.0\RetLib.pdb
+C:\Users\melic\Desktop\Nyulak-es-Rokak-main\Nyulak_es_Rokak\RetLib\obj\Debug\net8.0\ref\RetLib.dll

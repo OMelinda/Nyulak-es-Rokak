@@ -27,32 +27,40 @@
     ]
   },
   "packageFolders": {
-    "/home/user/.nuget/packages/": {}
+    "C:\\Users\\melic\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/Ret/Ret.csproj",
+      "projectUniqueName": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj",
       "projectName": "Ret",
-      "projectPath": "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/Ret/Ret.csproj",
-      "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/Ret/obj/",
+      "projectPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj",
+      "packagesPath": "C:\\Users\\melic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/user/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\melic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/RetLib/RetLib.csproj": {
-              "projectPath": "/home/user/base/edu/bmszc/njit/12.a/ikt/Nyulak-es-Rokak/Nyulak_es_Rokak/RetLib/RetLib.csproj"
+            "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj": {
+              "projectPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj"
             }
           }
         }
@@ -87,7 +95,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/user/dotnet-sdk-8.0.204/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

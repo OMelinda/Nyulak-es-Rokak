@@ -1,27 +1,30 @@
-namespace RetLib;
-
 public class Grid
 {
-    public int Rows { get; private set; }
-    public int Columns { get; private set; }
-    public Cell[,] Cells { get; private set; }
+    public int Width { get; private set; }
+    public int Height { get; private set; }
+    public Cell[,] Cells;
 
-    public Grid(int rows, int columns)
+    public Grid(int width, int height)
     {
-        Rows = rows;
-        Columns = columns;
-        Cells = new Cell[rows, columns];
-        InitializeGrid();
-    }
+        Width = width;
+        Height = height;
+        Cells = new Cell[width, height];
 
-    private void InitializeGrid()
-    {
-        for (int i = 0; i < Rows; i++)
+        // Létrehozzuk a cellákat
+        for (int i = 0; i < width; i++)
         {
-            for (int j = 0; j < Columns; j++)
+            for (int j = 0; j < height; j++)
             {
-                Cells[i, j] = new Cell(new Grass());
+                Cells[i, j] = new Cell(i, j);
             }
         }
+    }
+
+    // Segédfüggvény egy adott cella lekérdezésére
+    public Cell GetCell(int x, int y)
+    {
+        if (x >= 0 && x < Width && y >= 0 && y < Height)
+            return Cells[x, y];
+        return null;
     }
 }
