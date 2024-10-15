@@ -1,12 +1,11 @@
-﻿
-using System;
+﻿using System;
 using System.Threading;
 
 class Program
 {
     static void Main(string[] args)
     {
-        // Felhasználói bemenet a rács méreteinek és az entitások számának megadására
+        
         Console.WriteLine("Add meg a rács oszlopainak számát:");
         int gridWidth = int.Parse(Console.ReadLine());
 
@@ -19,10 +18,10 @@ class Program
         Console.WriteLine("Add meg a rókák számát:");
         int foxCount = int.Parse(Console.ReadLine());
 
-        // Szimuláció létrehozása a megadott méretű rácson
+        
         Simulation simulation = new Simulation(gridWidth, gridHeight);
 
-        // Nyulak és rókák véletlenszerű elhelyezése a rácson
+        
         Random rand = new Random();
         for (int i = 0; i < rabbitCount; i++)
         {
@@ -44,18 +43,18 @@ class Program
             }
         }
 
-        // Szimuláció futtatása 20 körön át
-        for (int i = 0; i < 20; i++)
+        
+        for (int i = 0; i < 10; i++)
         {
             Console.Clear();
-            Console.WriteLine($"Turn {i + 1}");
+            Console.WriteLine($"{i + 1}. kör");
             DisplayGrid(simulation.Grid);
             simulation.RunTurn();
-            Thread.Sleep(3000); // Egy másodperces szünet minden kör után
+            Thread.Sleep(2000); 
         }
     }
 
-    // Rács megjelenítése a konzolon
+    
     static void DisplayGrid(Grid grid)
     {
         for (int y = 0; y < grid.Height; y++)
@@ -65,17 +64,37 @@ class Program
                 var cell = grid.GetCell(x, y);
 
                 if (cell.Rabbit != null)
-                    Console.Write("R ");  // Nyúl
+                {
+                    Console.Write("R ");  
+                }
                 else if (cell.Fox != null)
-                    Console.Write("F ");  // Róka
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;  
+                    Console.Write("F ");
+                    Console.ResetColor();
+                }
                 else if (cell.Grass.State == GrassState.Seedling)
-                    Console.Write("# ");  // Fűkezdemény
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;  
+                    Console.Write("# ");
+                    Console.ResetColor();
+                }
                 else if (cell.Grass.State == GrassState.Tender)
-                    Console.Write("X ");  // Zsenge fű
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;  
+                    Console.Write("X ");
+                    Console.ResetColor();
+                }
                 else if (cell.Grass.State == GrassState.FullGrown)
-                    Console.Write("O ");  // Kifejlett fűcsomó
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;  
+                    Console.Write("O ");
+                    Console.ResetColor();
+                }
                 else
-                    Console.Write(" ");  // Üres cella
+                {
+                    Console.Write("  ");  
+                }
             }
             Console.WriteLine();
         }

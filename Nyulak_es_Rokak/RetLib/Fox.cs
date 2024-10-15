@@ -1,4 +1,3 @@
-
 public class Fox
 {
     public int Fullness { get; private set; }
@@ -11,8 +10,8 @@ public class Fox
 
     public void Eat(Rabbit rabbit, Cell currentCell)
     {
-        Fullness += 3;  // Nyúl tápértéke 3
-        currentCell.Rabbit = null;  // Nyulat elfogyasztja
+        Fullness += 3;  
+        currentCell.Rabbit = null;  
     }
 
     public void Starve()
@@ -25,12 +24,44 @@ public class Fox
         return Fullness <= 0;
     }
 
-    public void Move(Cell currentCell, Cell targetCell)
+    public void Move(Grid grid, Cell currentCell)
     {
-        if (targetCell.IsEmpty())
+        var neighbors = grid.GetNeighboringCells(currentCell.X, currentCell.Y);
+        Cell targetRabbitCell = neighbors.FirstOrDefault(c => c.Rabbit != null);
+
+        if (targetRabbitCell != null)
         {
-            targetCell.Fox = this;
+            
+            Eat(targetRabbitCell.Rabbit, targetRabbitCell);
+            targetRabbitCell.Fox = this;
             currentCell.Fox = null;
         }
+        else
+        {
+            
+            List<Cell> availableCells = neighbors.Where(c => c.IsEmpty() && c.Fox == null).ToList();
+            if (availableCells.Count > 0)
+            {
+                Cell targetCell = availableCells[new Random().Next(availableCells.Count)];
+                targetCell.Fox = this;
+                currentCell.Fox = null;
+            }
+        }
+    }
+
+    public bool TryReproduce(Grid grid, Cell currentCell)
+    {
+        var neighbors = grid.GetNeighboringCells(currentCell.X, currentCell.Y);
+        if (neighbors.Any(c => c.Fox != null))  
+        {
+            List<Cell> emptyCells = neighbors.Where(c => c.IsEmpty()).ToList();
+            if (emptyCells.Count > 0)
+            {
+                Cell birthCell = emptyCells[new Random().Next(emptyCells.Count)];
+                birthCell.Fox = new Fox();  
+                return true;
+            }
+        }
+        return false;
     }
 }

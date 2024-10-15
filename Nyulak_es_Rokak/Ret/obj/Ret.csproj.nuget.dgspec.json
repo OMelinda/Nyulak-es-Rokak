@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj": {}
+    "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj": {}
   },
   "projects": {
-    "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj": {
+    "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj",
+        "projectUniqueName": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj",
         "projectName": "RetLib",
-        "projectPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj",
+        "projectPath": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj",
         "packagesPath": "C:\\Users\\melic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\obj\\",
+        "outputPath": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj": {
+    "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj",
+        "projectUniqueName": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj",
         "projectName": "Ret",
-        "projectPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj",
+        "projectPath": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\Ret.csproj",
         "packagesPath": "C:\\Users\\melic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\obj\\",
+        "outputPath": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\Ret\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj": {
-                "projectPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj"
+              "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj": {
+                "projectPath": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj"
               }
             }
           }

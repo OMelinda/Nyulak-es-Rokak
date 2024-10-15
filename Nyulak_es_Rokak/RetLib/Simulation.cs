@@ -1,5 +1,3 @@
-
-
 public class Simulation
 {
     public Grid Grid { get; private set; }
@@ -13,7 +11,7 @@ public class Simulation
 
     public void RunTurn()
     {
-        // Grass grows
+        
         foreach (var cell in Grid.Cells)
         {
             if (cell.Rabbit == null)
@@ -22,7 +20,7 @@ public class Simulation
             }
         }
 
-        // Process rabbits
+        
         foreach (var cell in Grid.Cells)
         {
             if (cell.Rabbit != null)
@@ -30,18 +28,23 @@ public class Simulation
                 cell.Rabbit.Starve();
                 if (cell.Rabbit.IsDead())
                 {
-                    cell.Rabbit = null;  // Nyúl elpusztul
+                    cell.Rabbit = null;  
                 }
                 else
                 {
-                    cell.Rabbit.Eat(cell.Grass);  // Nyúl legel
-                    // Nyúl mozgása
-                    // Szaporodás, ha van hely és másik nyúl közelben
+                    cell.Rabbit.Eat(cell.Grass);  
+                    cell.Rabbit.Move(Grid, cell);  
+
+                    
+                    if (cell.Rabbit != null)
+                    {
+                        cell.Rabbit.TryReproduce(Grid, cell);  
+                    }
                 }
             }
         }
 
-        // Process foxes
+        
         foreach (var cell in Grid.Cells)
         {
             if (cell.Fox != null)
@@ -49,11 +52,17 @@ public class Simulation
                 cell.Fox.Starve();
                 if (cell.Fox.IsDead())
                 {
-                    cell.Fox = null;  // Róka elpusztul
+                    cell.Fox = null;  
                 }
                 else
                 {
-                    // Róka táplálkozása és mozgása
+                    cell.Fox.Move(Grid, cell);  
+
+                    
+                    if (cell.Fox != null)
+                    {
+                        cell.Fox.TryReproduce(Grid, cell);  
+                    }
                 }
             }
         }

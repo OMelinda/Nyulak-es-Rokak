@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj",
+      "projectUniqueName": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj",
       "projectName": "RetLib",
-      "projectPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj",
+      "projectPath": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\RetLib.csproj",
       "packagesPath": "C:\\Users\\melic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melic\\Desktop\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\obj\\",
+      "outputPath": "C:\\Users\\melic\\Pictures\\Nyulak-es-Rokak-main\\Nyulak_es_Rokak\\RetLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
