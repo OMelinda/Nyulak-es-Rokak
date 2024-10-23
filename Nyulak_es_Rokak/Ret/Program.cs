@@ -7,16 +7,16 @@ class Program
     {
         
         Console.WriteLine("Add meg a rács oszlopainak számát:");
-        int gridWidth = int.Parse(Console.ReadLine());
+        int gridWidth = int.Parse(Console.ReadLine()!);
 
         Console.WriteLine("Add meg a rács sorainak számát:");
-        int gridHeight = int.Parse(Console.ReadLine());
+        int gridHeight = int.Parse(Console.ReadLine()!);
 
         Console.WriteLine("Add meg a nyulak számát:");
-        int rabbitCount = int.Parse(Console.ReadLine());
+        int rabbitCount = int.Parse(Console.ReadLine()!);
 
         Console.WriteLine("Add meg a rókák számát:");
-        int foxCount = int.Parse(Console.ReadLine());
+        int foxCount = int.Parse(Console.ReadLine()!);
 
         
         Simulation simulation = new Simulation(gridWidth, gridHeight);
